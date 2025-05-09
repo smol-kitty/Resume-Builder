@@ -191,7 +191,8 @@ body ul {
   }
   .resume {
     width: 80%;
-    min-height: 103.68vw;
+    min-height: 103.68;
+    height: fit-content;
     margin: 20vw auto;
     padding-top: 7.41vw;
     padding-bottom: 7.41vw;
