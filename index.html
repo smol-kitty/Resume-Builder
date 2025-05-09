@@ -278,7 +278,10 @@
         let currentResume = document.querySelector(".resume");
         if (currentResume) {
           const viewportWidth = window.innerWidth;
-          const targetHeight = 0.647 * viewportWidth;
+          const targetHeight =
+            viewportWidth >= 1000
+              ? 0.647 * viewportWidth
+              : 1.03 * viewportWidth;
           const sections = Array.from(
             currentResume.querySelectorAll(".section")
           );
@@ -360,6 +363,17 @@
           removePageCount();
         }
       });
+      function updateStyles() {
+        const viewportWidth = window.innerWidth;
+        const element = document.querySelector(".page-limit");
+        if (viewportWidth <= 1000) {
+          element.style.top = `${1.03 * viewportWidth}px`;
+        } else {
+          element.style.top = `${0.647 * viewportWidth}px`;
+        }
+      }
+      updateStyles();
+      window.addEventListener("resize", updateStyles);
     </script>
   </body>
 </html>

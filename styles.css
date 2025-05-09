@@ -168,10 +168,14 @@ body ul {
 
 @media (max-width: 1000px) {
   .pagination {
-    top: 5vh;
+    position: absolute;
+    top: -10vw;
+    right: 0;
     font-size: 1.6vw;
     justify-content: center;
-    gap: 0.5vw;
+    width: 100%;
+    gap: 0.8vw;
+    z-index: 100;
   }
   .pagination input {
     width: 1.6vw;
@@ -188,7 +192,7 @@ body ul {
   .resume {
     width: 80%;
     min-height: 103.68;
-    margin: 10vw auto;
+    margin: 20vw auto;
     padding-top: 7.41vw;
     padding-bottom: 7.41vw;
   }
