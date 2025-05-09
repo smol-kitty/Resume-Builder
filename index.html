@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>John Doe's CV</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="pagination">
+      <label>Mutliple Pages</label>
+      <input type="checkbox" />
+    </div>
+    <p class="page-count"></p>
+    <section class="resume">
+      <p class="last-updated">Last updated in September 2024</p>
+      <p class="person">John Doe</p>
+      <div class="contacts">
+        <div class="contact">
+          <i class="fas fa-map-marker-alt icon"></i>
+          <p>Your Location</p>
+        </div>
+        <div class="contact">
+          <i class="fa fa-envelope"></i>
+          <p>youremail@yourdomain.com</p>
+        </div>
+        <div class="contact">
+          <i class="fas fa-phone"></i>
+          <p>0541 999 99 99</p>
+        </div>
+        <div class="contact">
+          <i class="fas fa-link"></i>
+          <p>yourwebsite.com</p>
+        </div>
+        <div class="contact">
+          <i class="fab fa-linkedin linkedin-icon"></i>
+          <p>yourusername</p>
+        </div>
+        <div class="contact">
+          <i class="fab fa-github github-icon"></i>
+          <p>yourusername</p>
+        </div>
+      </div>
+      <div class="section">
+        <p class="title">Welcome to RenderCV!</p>
+        <div class="line"></div>
+        <div class="content">
+          <p>
+            <a href="https://rendercv.com/">RenderCV</a> is a LaTeX-based
+            CV/resume version-control and maintenance app. It allows you to
+            create a high-quality CV or resume as a PDF file from a YAML file,
+            with <span class="bold">Markdown syntax support</span> and
+            <span class="bold">complete control over the LaTeX code.</span>
+          </p>
+          <p>
+            The boilerplate content was inspired by
+            <a href="https://github.com/dnl-blkv/mcdowell-cv">Gayle McDowell</a
+            >.
+          </p>
+        </div>
+      </div>
+      <div class="section">
+        <p class="title">Quick Guide</p>
+        <div class="line"></div>
+        <ul class="content">
+          <li>
+            Each section title is arbitrary and each section contains a list of
+            entries.
+          </li>
+          <li>
+            There are 7 unique entry types:
+            <span class="italic">BulletEntry</span>,
+            <span class="italic">TextEntry</span>,
+            <span class="italic">EducationEntry</span>,
+            <span class="italic">ExperienceEntry</span>,
+            <span class="italic">NormalEntry</span>,
+            <span class="italic">PublicationEntry</span>, and
+            <span class="italic">OneLineEntry</span>.
+          </li>
+          <li>
+            Select a section title, pick an entry type, and start writing your
+            section!
+          </li>
+          <li>
+            <a href="https://docs.rendercv.com/user_guide/">Here</a>, you can
+            find a comprehensive user guide for RenderCV.
+          </li>
+        </ul>
+      </div>
+      <div class="section">
+        <p class="title">Education</p>
+        <div class="line"></div>
+        <div class="content">
+          <div class="subtitle">
+            <p class="bold">University of Pennsylvania</p>
+            <p class="italic">BS in Computer Science</p>
+            <div class="metainfo">
+              <p>Sep 2000 - May 2005</p>
+            </div>
+          </div>
+          <ul class="subcontent">
+            <li>
+              GPA: 3.9/4.0 <a href="https://example.com">a link to somewhere</a>
+            </li>
+            <li>
+              <span class="bold">Coursework:</span> Computer Architecture,
+              Comparison of Learning Algorithms, Computational Theory
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="section">
+        <p class="title">Experience</p>
+        <div class="line"></div>
+        <div class="content">
+          <div class="subtitle">
+            <p class="bold">Software Engineer</p>
+            <p class="italic">Apple</p>
+            <div class="metainfo">
+              <p>Cupertino, CA</p>
+              <p>June 2005 - Aug 2007</p>
+            </div>
+          </div>
+          <ul class="subcontent">
+            <li>
+              Reduced time to render user buddy lists by 75% by implementing a
+              prediction algorithm.
+            </li>
+            <li>
+              Integrated iChat with Spotlight Search by creating a tool to
+              extract metadata from saved chat transcripts and provide metadata
+              to a system-wide search database.
+            </li>
+            <li>
+              Redesigned chat file format and implemented backward compatibility
+              for search.
+            </li>
+          </ul>
+        </div>
+        <div class="content">
+          <div class="subtitle">
+            <p class="bold">Software Engineer Intern</p>
+            <p class="italic">Microsoft</p>
+            <div class="metainfo">
+              <p>Redmond, WA</p>
+              <p>June 2003 - Aug 2003</p>
+            </div>
+          </div>
+          <ul class="subcontent">
+            <li>
+              Designed a UI for the VS open file switcher (Ctrl-Tab) and
+              extended it to tool windows.
+            </li>
+            <li>
+              Created a service to provide gradient across VS and VS add-ins,
+              optimizing its performance via caching.
+            </li>
+            <li>
+              Built an app to compute the similarity of all methods in a
+              codebase, reducing the time from O(n<span class="superscript"
+                >2</span
+              >) to O(n log n).
+            </li>
+            <li>
+              Created a test case generation tool that creates random XML docs
+              from XML Schema \item Automated the extraction and processing of
+              large datasets from legacy systems using SQL and Perl scripts.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="section">
+        <p class="title">Publications</p>
+        <div class="line"></div>
+        <div class="content">
+          <div class="subtitle">
+            <p class="bold">
+              3D Finite Element Analysis of No-Insulation Coils
+            </p>
+            <p class="metainfo">Jan 2004</p>
+          </div>
+          <p>
+            Frodo Baggins, <span class="bold">John Doe</span>, Samwise Gamgee<br />
+            <a href="https://doi.org/10.1109/TASC.2023.3340648"
+              >10.1109/TASC.2023.3340648</a
+            >
+          </p>
+        </div>
+      </div>
+      <div class="section">
+        <p class="title">Projects</p>
+        <div class="line"></div>
+        <div class="content">
+          <div class="subtitle">
+            <p class="bold">Multi-User Drawing Tool</p>
+            <div class="metainfo">
+              <a href="https://github.com/rendercv/rendercv"
+                >github.com/name/repo</a
+              >
+            </div>
+          </div>
+          <ul class="subcontent">
+            <li>
+              Developed an electronic classroom where multiple users can
+              simultaneously view and draw on a "chalkboard" with each person's
+              edits synchronized.
+            </li>
+            <li>Tools Used: C++, MFC.</li>
+          </ul>
+        </div>
+        <div class="content">
+          <div class="subtitle">
+            <p class="bold">Synchronized Desktop Calendar</p>
+            <div class="metainfo">
+              <a href="https://github.com/rendercv/rendercv"
+                >github.com/name/repo</a
+              >
+            </div>
+          </div>
+          <ul class="subcontent">
+            <li>
+              Developed a desktop calendar with globally shared and synchronized
+              calendars, allowing users to schedule meetings with other users.
+            </li>
+            <li>Tools Used: C\#, .NET, SQL, XML.</li>
+          </ul>
+        </div>
+        <div class="content">
+          <div class="subtitle">
+            <p class="bold">Custom Operating System</p>
+            <div class="metainfo">
+              <p>2002</p>
+            </div>
+          </div>
+          <ul class="subcontent">
+            <li>
+              Built a UNIX-style OS with a scheduler, file system, text editor,
+              and calculator.
+            </li>
+            <li>Tools Used: C.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="section">
+        <p class="title">Technologies</p>
+        <div class="line"></div>
+        <div class="content">
+          <p>
+            <span class="bold">Languages: </span>C++, C, Java, Objective-C, C\#,
+            SQL, JavaScript.
+          </p>
+          <p>
+            <span class="bold">Technoologies: </span>.NET, Microsoft SQL Server,
+            XCode, Interface Builder.
+          </p>
+        </div>
+      </div>
+      <div class="page-limit"></div>
+    </section>
+    <script>
+      document.querySelectorAll("a").forEach(function (link) {
+        link.setAttribute("target", "_blank");
+      });
+      document.querySelectorAll(".section").forEach((section) => {
+        const contents = section.querySelectorAll(".content");
+
+        contents.forEach((content, index) => {
+          if (index > 0) {
+            content.classList.add("mulcontent");
+          }
+        });
+      });
+      function mulPage() {
+        let currentResume = document.querySelector(".resume");
+        if (currentResume) {
+          const viewportWidth = window.innerWidth;
+          const targetHeight = 0.647 * viewportWidth;
+          const sections = Array.from(
+            currentResume.querySelectorAll(".section")
+          );
+          sections.forEach((section) => section.remove());
+          const resumesContainer = document.createElement("div");
+          resumesContainer.className = "resumes-container";
+          currentResume.parentNode.insertBefore(
+            resumesContainer,
+            currentResume
+          );
+          resumesContainer.appendChild(currentResume);
+          sections.forEach((section) => {
+            currentResume.appendChild(section);
+            const currentHeight = currentResume.getBoundingClientRect().height;
+
+            if (currentHeight > targetHeight) {
+              section.remove();
+              const newResume = document.createElement("div");
+              newResume.className = "resume";
+              newResume.appendChild(section);
+              resumesContainer.appendChild(newResume);
+              currentResume = newResume;
+            }
+          });
+        }
+        let line = document.querySelector(".page-limit");
+        line.style.visibility = "hidden";
+      }
+      function singlePage() {
+        const resumes = document.querySelectorAll(".resume");
+        if (resumes.length <= 1) return;
+        const firstResume = resumes[0];
+        const allSections = [];
+        resumes.forEach((resume) => {
+          const sections = resume.querySelectorAll(".section");
+          sections.forEach((section) => {
+            allSections.push(section);
+          });
+        });
+        const firstSections = firstResume.querySelectorAll(".section");
+        firstSections.forEach((section) => section.remove());
+        allSections.forEach((section) => {
+          firstResume.appendChild(section);
+        });
+        for (let i = 1; i < resumes.length; i++) {
+          resumes[i].remove();
+        }
+        let line = document.querySelector(".page-limit");
+        line.style.visibility = "visible";
+      }
+      function addPageCount() {
+        const resumes = document.querySelectorAll(".resume");
+        const count = resumes.length;
+        resumes.forEach((resume, index) => {
+          if (!resume.querySelector(".page-count")) {
+            const div = document.createElement("div");
+            div.className = "page-count";
+            div.textContent = `John Doe - Page ${index + 1} of ${count}`;
+            resume.appendChild(div);
+          }
+        });
+      }
+      function removePageCount() {
+        const resumes = document.querySelectorAll(".resume");
+        resumes.forEach((resume) => {
+          const dynamicDiv = resume.querySelector(".page-count");
+          if (dynamicDiv) {
+            dynamicDiv.remove();
+          }
+        });
+      }
+      const checkbox = document.querySelector(".pagination input");
+      checkbox.addEventListener("change", function () {
+        if (this.checked) {
+          mulPage();
+          addPageCount();
+        } else {
+          singlePage();
+          removePageCount();
+        }
+      });
+    </script>
+  </body>
+</html>

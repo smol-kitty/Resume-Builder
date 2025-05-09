@@ -1,0 +1,250 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  max-width: 100vw;
+  height: fit-content;
+  overflow-x: hidden;
+  background-color: grey;
+  font-family: "Latin Modern Roman", "Computer Modern", "Georgia", serif;
+  position: relative;
+}
+.pagination {
+  position: absolute;
+  top: 10vh;
+  right: 10vw;
+  font-size: 1vw;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5vw;
+}
+.pagination input {
+  width: 1vw;
+  height: 1vw;
+}
+.page-count {
+  position: absolute;
+  font-size: 0.8vw;
+  bottom: 1vw;
+  width: 100%;
+  font-style: italic;
+  color: rgb(92, 92, 92);
+  text-align: center;
+}
+body ul {
+  list-style-type: circle;
+}
+.page-limit {
+  background-color: red;
+  height: 0.1vw;
+  width: 100%;
+  position: absolute;
+  top: 64.8vw;
+  visibility: visible;
+}
+.bold {
+  font-weight: bold;
+}
+.italic {
+  font-style: italic;
+}
+.superscript {
+  vertical-align: super;
+}
+.resume {
+  width: 50%;
+  min-height: 64.7vw;
+  height: fit-content;
+  margin: 5vh auto;
+  padding: 0 2.5%;
+  padding-top: 4.63vw;
+  padding-bottom: 4.63vw;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  background-color: white;
+}
+.last-updated {
+  position: absolute;
+  top: 2.38vw;
+  right: 5.12vw;
+  font-size: 0.73vw;
+  color: gray;
+  font-style: italic;
+}
+.person {
+  font-weight: bold;
+  font-size: 1.95vw;
+  letter-spacing: normal;
+}
+.contacts {
+  margin-top: 0.71vw;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.57vw 1.16vw;
+  font-size: 0.84vw;
+}
+.contacts .icon {
+  font-size: 0.65vw;
+}
+.contact {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.3vw;
+}
+.section {
+  width: 100%;
+  height: fit-content;
+  margin-top: 1.16vw;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.title {
+  font-size: 1.13vw;
+  font-weight: bold;
+}
+.line {
+  background-color: black;
+  width: 100%;
+  height: 0.1vw;
+  margin: 0.46vw 0;
+}
+.content {
+  width: 100%;
+  margin-left: 0.5vw;
+  display: flex;
+  flex-direction: column;
+  gap: 0.42vw;
+  font-size: 0.81vw;
+  line-height: 150%;
+}
+.mulcontent {
+  margin-top: 0.5vw;
+}
+.content li {
+  margin-left: 1vw;
+}
+.subtitle {
+  font-size: 0.83vw;
+  gap: 0.1vw;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+}
+.subcontent {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15vw;
+}
+.subcontent li {
+  margin-left: 2vw;
+}
+.metainfo {
+  position: absolute;
+  font-size: 0.83vw;
+  font-style: italic;
+  right: 1vw;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 0.1vw;
+}
+
+@media (max-width: 1000px) {
+  .pagination {
+    top: 5vh;
+    font-size: 1.6vw;
+    justify-content: center;
+    gap: 0.5vw;
+  }
+  .pagination input {
+    width: 1.6vw;
+    height: 1.6vw;
+  }
+  .page-count {
+    font-size: 1.28vw;
+    bottom: 1.6vw;
+  }
+  .page-limit {
+    height: 0.16vw;
+    top: 103.68vw;
+  }
+  .resume {
+    width: 80%;
+    min-height: 103.68;
+    margin: 10vw auto;
+    padding-top: 7.41vw;
+    padding-bottom: 7.41vw;
+  }
+  .last-updated {
+    top: 3.81vw;
+    right: 8.19vw;
+    font-size: 1.17vw;
+  }
+  .person {
+    font-size: 3.12vw;
+  }
+  .contacts {
+    margin-top: 1.14vw;
+    gap: 0.91vw 1.86vw;
+    font-size: 1.34vw;
+  }
+  .contacts .icon {
+    font-size: 1.04vw;
+  }
+  .contact {
+    gap: 0.48vw;
+  }
+  .section {
+    margin-top: 1.86vw;
+  }
+  .title {
+    font-size: 1.81vw;
+  }
+  .line {
+    height: 0.2vw;
+    margin: 0.74vw 0;
+  }
+  .content {
+    margin-left: 0.8vw;
+    gap: 0.67vw;
+    font-size: 1.3vw;
+  }
+  .mulcontent {
+    margin-top: 0.8vw;
+  }
+  .content li {
+    margin-left: 1.6vw;
+  }
+  .subtitle {
+    font-size: 1.33vw;
+    gap: 0.2vw;
+  }
+  .subcontent {
+    gap: 0.24vw;
+  }
+  .subcontent li {
+    margin-left: 3.2vw;
+  }
+  .metainfo {
+    font-size: 1.33vw;
+    right: 1.6vw;
+    gap: 0.2vw;
+  }
+}
