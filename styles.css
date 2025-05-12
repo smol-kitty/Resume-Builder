@@ -1,255 +1,194 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 body {
   width: 100vw;
   max-width: 100vw;
   height: fit-content;
   overflow-x: hidden;
-  background-color: grey;
-  font-family: "Latin Modern Roman", "Computer Modern", "Georgia", serif;
-  position: relative;
-}
-.pagination {
-  position: absolute;
-  top: 10vh;
-  right: 10vw;
-  font-size: 1vw;
-  color: white;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 0.5vw;
-}
-.pagination input {
-  width: 1vw;
-  height: 1vw;
-}
-.page-count {
-  position: absolute;
-  font-size: 0.8vw;
-  bottom: 1vw;
-  width: 100%;
-  font-style: italic;
-  color: rgb(92, 92, 92);
-  text-align: center;
-}
-body ul {
-  list-style-type: circle;
-}
-.page-limit {
-  background-color: red;
-  height: 0.1vw;
-  width: 100%;
-  position: absolute;
-  top: 64.8vw;
-  visibility: visible;
+  background-color: gray;
+  font-family: Calibri, Candara, Segoe, Segoe UI, Optima, sans-serif;
 }
 .bold {
-  font-weight: bold;
-}
-.italic {
-  font-style: italic;
-}
-.superscript {
-  vertical-align: super;
+  font-weight: 550;
 }
 .resume {
-  width: 50%;
-  min-height: 64.7vw;
-  height: fit-content;
-  margin: 5vh auto;
-  padding: 0 2.5%;
-  padding-top: 4.63vw;
-  padding-bottom: 4.63vw;
+  width: 50vw;
+  height: 70.71vw;
+  max-height: 70.71vw;
+  margin: 5vw auto;
+  padding: 0.5vw 2.5%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5vw;
   position: relative;
+}
+.page-count {
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  font-size: 1vw;
+  font-style: italic;
+  color: gray;
+  bottom: 1vw;
+  left: 0;
+}
+.personal-info {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0;
-  background-color: white;
+  gap: 0.25vw;
 }
-.last-updated {
-  position: absolute;
-  top: 2.38vw;
-  right: 5.12vw;
-  font-size: 0.73vw;
-  color: gray;
-  font-style: italic;
+.name {
+  font-size: 2.2vw;
+  height: fit-content;
 }
-.person {
-  font-weight: bold;
-  font-size: 1.95vw;
-  letter-spacing: normal;
+.designation {
+  font-size: 1.25vw;
+  height: fit-content;
 }
 .contacts {
-  margin-top: 0.71vw;
-  width: 100%;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  gap: 1vw;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 0.57vw 1.16vw;
-  font-size: 0.84vw;
-}
-.contacts .icon {
-  font-size: 0.65vw;
+  width: 100%;
 }
 .contact {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 0.3vw;
+  gap: 0.35vw;
+  font-size: 1vw;
+}
+.icon {
+  font-size: 0.85vw;
+}
+.contact a {
+  color: black;
+}
+.contact a:hover {
+  color: black;
+}
+.contact a:visited {
+  color: black;
+}
+.sections {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 0.75vw;
+  margin-bottom: 2.5vw;
+  flex: 1;
 }
 .section {
   width: 100%;
-  height: fit-content;
-  margin-top: 1.16vw;
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: start;
+  gap: 0.1vw;
 }
 .title {
-  font-size: 1.13vw;
-  font-weight: bold;
+  font-size: 1.5vw;
+  font-weight: 550;
+  width: 100%;
+  text-align: start;
 }
-.line {
-  background-color: black;
+.title::after {
+  content: "";
   width: 100%;
   height: 0.1vw;
-  margin: 0.46vw 0;
+  display: block;
+  background-color: black;
+  margin-bottom: 0.35vw;
+  margin-top: 0.1vw;
+}
+.subsection {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-weight: 550;
+  width: 100%;
+  font-size: 1.1vw;
+}
+.middle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 1vw;
+  font-style: italic;
 }
 .content {
-  width: 100%;
-  margin-left: 0.5vw;
-  display: flex;
-  flex-direction: column;
-  gap: 0.42vw;
-  font-size: 0.81vw;
-  line-height: 150%;
+  font-size: 0.95vw;
 }
-.mulcontent {
-  margin-top: 0.5vw;
-}
-.content li {
-  margin-left: 1vw;
-}
-.subtitle {
-  font-size: 0.83vw;
-  gap: 0.1vw;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  width: 100%;
-}
-.subcontent {
-  display: flex;
-  flex-direction: column;
-  gap: 0.15vw;
-}
-.subcontent li {
-  margin-left: 2vw;
-}
-.metainfo {
-  position: absolute;
-  font-size: 0.83vw;
-  font-style: italic;
-  right: 1vw;
-  top: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: end;
-  gap: 0.1vw;
+.subsection ul {
+  margin-left: 2.25vw;
 }
 
-@media (max-width: 1000px) {
-  .pagination {
-    position: absolute;
-    top: -10vw;
-    right: 0;
-    font-size: 1.6vw;
-    justify-content: center;
-    width: 100%;
-    gap: 0.8vw;
-    z-index: 100;
-  }
-  .pagination input {
-    width: 1.6vw;
-    height: 1.6vw;
-  }
-  .page-count {
-    font-size: 1.28vw;
-    bottom: 1.6vw;
-  }
-  .page-limit {
-    height: 0.16vw;
-    top: 103.68vw;
-  }
+@media (max-width: 1200px) {
   .resume {
-    width: 80%;
-    min-height: 103.68;
-    height: fit-content;
-    margin: 20vw auto;
-    padding-top: 7.41vw;
-    padding-bottom: 7.41vw;
+    width: 80vw;
+    height: 113.14vw;
+    max-height: 113.14vw;
+    margin: 8vw auto;
+    padding: 0.8vw 2.5%;
+    gap: 0.8vw;
   }
-  .last-updated {
-    top: 3.81vw;
-    right: 8.19vw;
-    font-size: 1.17vw;
+  .personal-info {
+    gap: 0.4vw;
   }
-  .person {
-    font-size: 3.12vw;
+  .name {
+    font-size: 3.52vw;
+  }
+  .designation {
+    font-size: 2vw;
   }
   .contacts {
-    margin-top: 1.14vw;
-    gap: 0.91vw 1.86vw;
-    font-size: 1.34vw;
-  }
-  .contacts .icon {
-    font-size: 1.04vw;
+    gap: 1.6vw;
   }
   .contact {
-    gap: 0.48vw;
+    gap: 0.56vw;
+    font-size: 1.6vw;
+  }
+  .icon {
+    font-size: 1.36vw;
+  }
+  .sections {
+    gap: 1.2vw;
   }
   .section {
-    margin-top: 1.86vw;
+    gap: 0.16vw;
   }
   .title {
-    font-size: 1.81vw;
+    font-size: 2.4vw;
   }
-  .line {
-    height: 0.2vw;
-    margin: 0.74vw 0;
+  .title::after {
+    height: 0.16vw;
+    margin-bottom: 0.56vw;
+    margin-top: 0.16vw;
+  }
+  .top {
+    font-size: 1.76vw;
+  }
+  .middle {
+    font-size: 1.6vw;
   }
   .content {
-    margin-left: 0.8vw;
-    gap: 0.67vw;
-    font-size: 1.3vw;
+    font-size: 1.52vw;
   }
-  .mulcontent {
-    margin-top: 0.8vw;
-  }
-  .content li {
-    margin-left: 1.6vw;
-  }
-  .subtitle {
-    font-size: 1.33vw;
-    gap: 0.2vw;
-  }
-  .subcontent {
-    gap: 0.24vw;
-  }
-  .subcontent li {
-    margin-left: 3.2vw;
-  }
-  .metainfo {
-    font-size: 1.33vw;
-    right: 1.6vw;
-    gap: 0.2vw;
+  .subsection ul {
+    margin-left: 3.6vw;
   }
 }
