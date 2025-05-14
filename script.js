@@ -78,4 +78,12 @@ function pagination() {
   }
 }
 newTabLinks();
-/*pagination();*/
+const sectionsCheck = document
+  .querySelector(".sections")
+  .getBoundingClientRect().bottom;
+const resumeCheck = document
+  .querySelector(".resume")
+  .getBoundingClientRect().bottom;
+if (sectionsCheck > resumeCheck) {
+  pagination();
+}
