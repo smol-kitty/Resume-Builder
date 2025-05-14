@@ -119,6 +119,30 @@
           </div>
         </div>
         <div class="section">
+          <p class="title">PROJECTS</p>
+          <div class="subsection">
+            <div class="top">
+              <p class="heading">Garud Drishti - AI-based Traffic Analytics</p>
+              <p class="info">July ’23 - May ’24</p>
+            </div>
+            <ul class="content">
+              <li>
+                Led a
+                <span class="bold"
+                  >cross-discipline team of 12 (from CS, Civil, Electronics, PhD
+                  students, and assistants)</span
+                >, defined the project roadmap through surveys and interviews
+                with government officials, academics, and engineers.
+              </li>
+              <li>
+                Secured a
+                <span class="bold">INR 2,00,000 Innovation Grant</span> and
+                launched a successful pilot with Surat City Traffic Police.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="section">
           <p class="title">POSITION OF RESPONSIBILITY</p>
           <div class="subsection">
             <div class="top">
@@ -147,29 +171,49 @@
           </div>
         </div>
         <div class="section">
-          <p class="title">PROJECTS</p>
+          <p class="title">Achievements</p>
           <div class="subsection">
             <div class="top">
-              <p class="heading">Garud Drishti - AI-based Traffic Analytics</p>
-              <p class="info">July ’23 - May ’24</p>
+              <p class="heading">National Level</p>
+              <p class="info">Feb’2023</p>
+            </div>
+            <div class="middle">
+              <p class="subheading">Gold Medalist</p>
+              <p class="metainfo">Maths Olympiad</p>
             </div>
             <ul class="content">
               <li>
-                Led a
-                <span class="bold"
-                  >cross-discipline team of 12 (from CS, Civil, Electronics, PhD
-                  students, and assistants)</span
-                >, defined the project roadmap through surveys and interviews
-                with government officials, academics, and engineers.
-              </li>
-              <li>
-                Secured a
-                <span class="bold">INR 2,00,000 Innovation Grant</span> and
-                launched a successful pilot with Surat City Traffic Police.
+                Secured <span class="bold">first rank</span> and won gold medal
+                at <span class="bold">2023 Maths Olympiad</span>.
               </li>
             </ul>
           </div>
         </div>
+        <div class="section">
+          <p class="title">Research Paper</p>
+          <div class="subsection">
+            <div class="top">
+              <p class="heading">Research Paper Title</p>
+              <p class="info">Feb’2024</p>
+            </div>
+            <div class="middle">
+              <p class="subheading">Journal/Conference Name</p>
+            </div>
+            <ul class="content">
+              <li>
+                <span class="bold">Lorem ipsum dolor</span> sit amet,
+                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat. Duis aute irure dolor in reprehenderit in
+                voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                qui officia deserunt mollit anim id est laborum.
+              </li>
+            </ul>
+          </div>
+        </div>
+
         <div class="section">
           <p class="title">SKILLS</p>
           <div class="subsection">
@@ -196,68 +240,6 @@
         </div>
       </div>
     </section>
-    <script>
-      function newTabLinks() {
-        document.querySelectorAll("a").forEach((link) => {
-          link.setAttribute("target", "_blank");
-        });
-      }
-      function pagination() {
-        const container = document.querySelector("body"); // Parent of all resumes
-        const originalResume = document.querySelector(".resume");
-        const resumeHeight = originalResume.offsetHeight;
-
-        const allSections = Array.from(
-          originalResume.querySelectorAll(".section")
-        ); // Get all .section elements
-
-        // Clean up original .sections
-        const originalSections = originalResume.querySelector(".sections");
-        originalSections.innerHTML = "";
-
-        let currentResume = originalResume;
-        let currentSections = currentResume.querySelector(".sections");
-
-        allSections.forEach((section) => {
-          currentSections.appendChild(section);
-
-          const bottom =
-            currentSections.offsetTop + currentSections.scrollHeight;
-          const resumeBottom = currentResume.offsetTop + resumeHeight;
-
-          if (bottom > resumeBottom) {
-            // Remove the overflowing section
-            currentSections.removeChild(section);
-
-            // Create a new resume page
-            const newResume = currentResume.cloneNode(true);
-            const newSections = newResume.querySelector(".sections");
-            newSections.innerHTML = ""; // Clear old content
-
-            // Remove all .personal-info elements in newResume
-            const personalInfos = newResume.querySelectorAll(".personal-info");
-            personalInfos.forEach((el) => el.remove());
-
-            // Set justify-content: start on new .sections
-            newSections.style.justifyContent = "start";
-            newSections.style.marginTop = "2.5vw";
-
-            // Append section to new .sections
-            newSections.appendChild(section);
-
-            // Append new resume to the container
-            container.appendChild(newResume);
-
-            // Update references
-            currentResume = newResume;
-            currentSections = newSections;
-          }
-        });
-      }
-      newTabLinks();
-      pagination();
-      window.addEventListener("load", pagination);
-      window.addEventListener("resize", pagination);
-    </script>
+    <script src="./script.js"></script>
   </body>
 </html>
