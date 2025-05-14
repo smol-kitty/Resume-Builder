@@ -63,7 +63,7 @@ body {
   flex-direction: row;
   align-items: center;
   gap: 0.35vw;
-  font-size: 1vw;
+  font-size: 0.75vw;
 }
 .icon {
   font-size: 0.85vw;
@@ -83,7 +83,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  gap: 0.75vw;
+  gap: 0.25vw;
   margin-bottom: 2.5vw;
   flex: 1;
 }
@@ -95,7 +95,7 @@ body {
   gap: 0.1vw;
 }
 .title {
-  font-size: 1.5vw;
+  font-size: 1vw;
   font-weight: 550;
   width: 100%;
   text-align: start;
@@ -120,18 +120,18 @@ body {
   justify-content: space-between;
   font-weight: 550;
   width: 100%;
-  font-size: 1.1vw;
+  font-size: 0.85vw;
 }
 .middle {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
-  font-size: 1vw;
+  font-size: 0.8vw;
   font-style: italic;
 }
 .content {
-  font-size: 0.95vw;
+  font-size: 0.75vw;
 }
 .subsection ul {
   margin-left: 2.25vw;
@@ -160,7 +160,7 @@ body {
   }
   .contact {
     gap: 0.56vw;
-    font-size: 1.6vw;
+    font-size: 1.2vw;
   }
   .icon {
     font-size: 1.36vw;
@@ -172,7 +172,7 @@ body {
     gap: 0.16vw;
   }
   .title {
-    font-size: 2.4vw;
+    font-size: 1.6vw;
   }
   .title::after {
     height: 0.16vw;
@@ -180,13 +180,13 @@ body {
     margin-top: 0.16vw;
   }
   .top {
-    font-size: 1.76vw;
+    font-size: 1.36vw;
   }
   .middle {
-    font-size: 1.6vw;
+    font-size: 1.28vw;
   }
   .content {
-    font-size: 1.52vw;
+    font-size: 1.2vw;
   }
   .subsection ul {
     margin-left: 3.6vw;

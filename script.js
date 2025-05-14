@@ -78,4 +78,4 @@ function pagination() {
   }
 }
 newTabLinks();
-pagination();
+/*pagination();*/
