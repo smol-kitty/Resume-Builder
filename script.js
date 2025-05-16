@@ -66,16 +66,6 @@ function pagination() {
       sections.style.marginTop = "5vw";
     }
   });
-  const resumes = document.querySelectorAll("body > .resume");
-  const resumeCount = resumes.length;
-  if (resumeCount > 1) {
-    resumes.forEach((resume, index) => {
-      const pageCount = document.createElement("p");
-      pageCount.className = "page-count";
-      pageCount.textContent = `Page ${index + 1} of ${resumeCount}`;
-      resume.appendChild(pageCount);
-    });
-  }
 }
 newTabLinks();
 const sectionsCheck = document

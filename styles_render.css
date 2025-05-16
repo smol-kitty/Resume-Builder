@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 body {
   width: 100vw;
@@ -14,15 +15,15 @@ body {
   font-weight: 550;
 }
 .resume {
-  width: 50vw;
-  height: 70.71vw;
-  max-height: 70.71vw;
-  margin: 5vw auto;
-  padding: 0.5vw 2.5%;
+  width: 210mm;
+  height: 297mm;
+  max-height: 297mm;
+  margin: 0;
+  padding: 2.1mm 10.5mm;
   background-color: white;
   display: flex;
   flex-direction: column;
-  gap: 0.5vw;
+  gap: 2.1mm;
   position: relative;
 }
 .personal-info {
@@ -30,21 +31,21 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.25vw;
+  gap: 1.05mm;
 }
 .name {
-  font-size: 2.2vw;
+  font-size: 9.24mm;
   height: fit-content;
 }
 .designation {
-  font-size: 1.25vw;
+  font-size: 5.25mm;
   height: fit-content;
 }
 .contacts {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  gap: 1vw;
+  gap: 4.2mm;
   flex-wrap: wrap;
   width: 100%;
 }
@@ -52,11 +53,11 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 0.35vw;
-  font-size: 0.75vw;
+  gap: 1.47mm;
+  font-size: 3.15mm;
 }
 .icon {
-  font-size: 0.85vw;
+  font-size: 3.57mm;
 }
 .contact a {
   color: black;
@@ -73,8 +74,8 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  gap: 0.25vw;
-  margin-bottom: 2.5vw;
+  gap: 1.05mm;
+  margin-bottom: 10.5mm;
   flex: 1;
 }
 .section {
@@ -82,10 +83,10 @@ body {
   display: flex;
   flex-direction: column;
   align-items: start;
-  gap: 0.1vw;
+  gap: 0.42mm;
 }
 .title {
-  font-size: 1.3vw;
+  font-size: 5.46mm;
   font-weight: 550;
   width: 100%;
   text-align: start;
@@ -93,11 +94,11 @@ body {
 .title::after {
   content: "";
   width: 100%;
-  height: 0.1vw;
+  height: 0.42mm;
   display: block;
   background-color: black;
-  margin-bottom: 0.35vw;
-  margin-top: 0.1vw;
+  margin-bottom: 1.47mm;
+  margin-top: 0.42mm;
 }
 .subsection {
   display: flex;
@@ -110,75 +111,19 @@ body {
   justify-content: space-between;
   font-weight: 550;
   width: 100%;
-  font-size: 0.74vw;
+  font-size: 3.11mm;
 }
 .middle {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
-  font-size: 0.69vw;
+  font-size: 2.9mm;
   font-style: italic;
 }
 .content {
-  font-size: 0.65vw;
+  font-size: 2.73mm;
 }
 .subsection ul {
-  margin-left: 2.25vw;
-}
-
-@media (max-width: 1200px) {
-  .resume {
-    width: 80vw;
-    height: 113.14vw;
-    max-height: 113.14vw;
-    margin: 8vw auto;
-    padding: 0.8vw 2.5%;
-    gap: 0.8vw;
-  }
-  .personal-info {
-    gap: 0.4vw;
-  }
-  .name {
-    font-size: 3.52vw;
-  }
-  .designation {
-    font-size: 2vw;
-  }
-  .contacts {
-    gap: 1.6vw;
-  }
-  .contact {
-    gap: 0.56vw;
-    font-size: 1.2vw;
-  }
-  .icon {
-    font-size: 1.36vw;
-  }
-  .sections {
-    gap: 1.2vw;
-  }
-  .section {
-    gap: 0.16vw;
-  }
-  .title {
-    font-size: 2.08vw;
-  }
-  .title::after {
-    height: 0.16vw;
-    margin-bottom: 0.56vw;
-    margin-top: 0.16vw;
-  }
-  .top {
-    font-size: 1.18vw;
-  }
-  .middle {
-    font-size: 1.1vw;
-  }
-  .content {
-    font-size: 1.04vw;
-  }
-  .subsection ul {
-    margin-left: 3.6vw;
-  }
+  margin-left: 9.45mm;
 }

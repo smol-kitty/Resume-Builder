@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "i": "^0.3.7",
+    "pdf-lib": "^1.17.1",
+    "puppeteer": "^24.8.2"
+  }
+}
