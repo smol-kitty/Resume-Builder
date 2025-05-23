@@ -56,8 +56,13 @@ body {
   gap: 1.47mm;
   font-size: 3.15mm;
 }
-.icon {
-  font-size: 3.57mm;
+.contact svg {
+  width: 3.57mm;
+  height: 3.57mm;
+}
+.contact .svg {
+  width: 4.2mm;
+  height: 4.2mm;
 }
 .contact a {
   color: black;
